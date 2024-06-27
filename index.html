@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#"> 
+                <img class="logo-img" src="./img/logo@2x.png"
+                    alt="cloud picture"></a>
+            <div class="d-flex flex-column mx-3">
+                <p class="fw-bolder text-white weather-nav"> Weather</p>
+                <p class="fs-6 text-secondary weather-nav"> tagline goes here</p>
+            </div>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class=" d-flex mb-2 mb-lg-0 list-unstyled">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- navbar end -->
+
+
+    <!-- search bar start -->
+    <div class="search-section">
+        <div class="container pt-5 ">
+            <form class="d-flex search-form rounded-pill" role="search">
+                <input id="searchBar" class="w-100 px-5 me-2 search-bar" type="search"
+                    placeholder="Find your location..." aria-label="Search">
+                <button class="btn btn-info text-white search-btn rounded-pill">Find</button>
+            </form>
+        </div>
+
+        <!-- search bar end -->
+
+        <!-- weather forecast start -->
+        <div class="container pt-5">
+            <div class="row">
+                <div class="p-0 col-lg-4 today">
+                    <div class="d-flex m-0 align-items-center justify-content-between today-head w-100 px-3 py-2 ">
+                        <h5 id="todayDay">Monday</h5>
+                        <div class="d-flex ">
+                            <p class="px-2" id="todayDate">24 </p>
+                            <p id="todayMonth">may</p>
+                        </div>
+                    </div>
+                    <div class="px-3 py-2">
+                        <h3 id="today">Cairo</h3>
+                        <div class=" degree d-flex justify-content-around align-items-center">
+                            <h1 class><span id="todayTemp">36</span> °C
+                            </h1>
+                            <div class="conditionImg">
+                                <img class="w-100 h-100" id="todayConditionImg" src="./img/icon-wind.png"
+                                    alt="condition of the weather">
+                            </div>
+                        </div>
+                        <p id="todayConditionText" class="mode ">clear</p>
+                    </div>
+                    <div class="px-5 py-4 d-flex justify-content-between">
+                        <div class="humidity">
+                            <div> <img src="./img/icon-umberella.png" alt="umberella image">
+                                <span id="todayhumidity">20</span>%
+                            </div>
+                        </div>
+                        <div> <img src="./img/icon-wind.png" alt="wind image">
+                            <span id="todayWind">18</span> km/h
+                        </div>
+                        <div> <img src="./img/icon-compass.png" alt="compass image">
+                            <span id="todayWindDirection">East</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-0 col-lg-4 tmw">
+                    <div class=" px-3 py-2 tmw-head ">
+                        <h5 class="nextDay text-center">Tuesday</h5>
+                    </div>
+                    <div class="h-75 px-3 py-2 d-flex flex-column align-items-center align-content-center m-2 degree">
+                        <div class="forecastImg">
+                            <img class="forecastCondtionImg w-100 h-100" src="./img/icon-wind.png"
+                                alt="weather forecast image">
+                        </div>
+                        <h1 class="maxTemp fs-3 p-2 ">36*C</h1>
+                        <h1 class="minTemp fs-5 p-2 ">36*C</h1>
+                        <p class="forecastCondition mode">clear</p>
+                    </div>
+                </div>
+
+                <div class="p-0 col-lg-4 atmw">
+                    <div class=" px-3 py-2 atmw-head">
+                        <h5 class="nextDay text-center">Wednesday</h5>
+
+                    </div>
+                    <div class="h-75 px-3 py-2 d-flex flex-column align-items-center align-content-center m-2 degree">
+                        <div class="forecastImg">
+                            <img class="forecastCondtionImg w-100 h-100 " src="./img/icon-wind.png"
+                                alt="weather forecast image">
+                        </div>
+                        <h1 class="maxTemp fs-3 p-2 ">36*C</h1>
+                        <h1 class="minTemp fs-5 p-2 ">36*C</h1>
+                        <p class="forecastCondition mode">clear</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- weather forecast end -->
+
+            <!-- footer start -->
+        </div>
+        <div class="my-5 footer">
+            <div class="container my-5">
+                <div class=" py-5 d-flex justify-content-between">
+                    <form class="w-50 d-flex search-form rounded-pill" role="search">
+                        <input class="w-100 px-5 me-2 search-bar" type="search"
+                            placeholder="Enter your Email to subscribe..." aria-label="Search">
+                        <button class="btn btn-info text-white search-btn rounded-pill">subscribe</button>
+                    </form>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f mx-3"></i>
+                        <i class="fa-brands fa-google mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                        <i class="fa-brands fa-pinterest mx-3"></i>
+                    </div>
+                </div>
+                <p class="p-3">Copyright 2024 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer end -->
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
